@@ -1,0 +1,12 @@
+apply plugin: 'groovy'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // La dependencia de Groovy sólo es necesario si queremos cambiar la
+    // versión. Spock 1.0 incluye Groovy 2.4.1
+    testCompile 'org.codehaus.groovy:groovy:2.4.7'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+}
